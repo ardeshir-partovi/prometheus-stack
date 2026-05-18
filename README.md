@@ -6,7 +6,7 @@
    `docker cp grafana:/etc/grafana/grafana.ini .`<br>
 
    vi docker-compose.yml:
-   `
+```
 services:
 
   prometheus:
@@ -33,6 +33,6 @@ services:
       - ./grafana.ini:/etc/grafana/grafana.ini:ro
     ports:
       - 3000:3000
-   `
+```
 
 2. Deploy Prometheus, Grafana, Pushgateway using `docker compose up -d`

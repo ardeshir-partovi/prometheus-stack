@@ -35,4 +35,4 @@ services:
       - 3000:3000
 ```
 
-3. Deploy Prometheus, Grafana, Pushgateway using `docker compose up -d`
+3. Run `docker compose up -d`

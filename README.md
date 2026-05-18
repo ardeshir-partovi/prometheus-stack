@@ -1,4 +1,5 @@
-<b>You Must install docker first.</b>
+<b>You Must install docker first. Commands run as root</b>
+
 
 1. Make a directory, get and copy Prometheus and Grafana settings files:<br>
    ```

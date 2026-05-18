@@ -1,9 +1,11 @@
+<b>You Must install docker first.</b>
+
 1. Make a directory, get and copy Prometheus and Grafana settings files:<br>
    `mkdir monitoring && cd monitoring && touch docker-compose.yml`<br>
    `docker run -dit --name grafana-test grafana/grafana`<br>
    `docker run -dit --name prometheus-test prom/prometheus`<br>
-   `docker cp prometheus:/etc/prometheus/prometheus.yml .`<br>
-   `docker cp grafana:/etc/grafana/grafana.ini .`<br>
+   `docker cp prometheus-test:/etc/prometheus/prometheus.yml .`<br>
+   `docker cp grafana-test:/etc/grafana/grafana.ini .`<br>
 
 2. `vi docker-compose.yml`:
 ```

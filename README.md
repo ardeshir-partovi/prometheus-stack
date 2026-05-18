@@ -8,7 +8,8 @@
    docker run -dit --name prometheus-test prom/prometheus && \
    docker run -dit --name grafana-test grafana/grafana && \
    docker cp prometheus-test:/etc/prometheus/prometheus.yml . && \
-   docker cp grafana-test:/etc/grafana/grafana.ini .
+   docker cp grafana-test:/etc/grafana/grafana.ini . && \
+   docker rm -f prometheus-test grafana-test
    ```
 
 2. `vi docker-compose.yml`:
@@ -42,5 +43,3 @@ services:
 ```
 
 3. Run `docker compose up -d`
-
-4. Run `docker rm -f prometheus-test grafana-test`

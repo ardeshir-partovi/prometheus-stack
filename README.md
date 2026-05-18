@@ -1,4 +1,4 @@
-<b>You Must install docker first.
+<b>You Must install docker first.<br>
 Commands run as root.</b>
 
 

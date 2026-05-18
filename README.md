@@ -3,7 +3,7 @@
 1. Make a directory, get and copy Prometheus and Grafana settings files:<br>
    ```
    mkdir ~/monitoring && \
-   cd monitoring && \
+   cd ~/monitoring && \
    touch docker-compose.yml && \
    docker run -dit --name prometheus-test prom/prometheus && \
    docker run -dit --name grafana-test grafana/grafana && \

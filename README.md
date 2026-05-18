@@ -38,3 +38,5 @@ services:
 ```
 
 3. Run `docker compose up -d`
+
+4. Run `docker rm -f prometheus-test grafana-test`

@@ -5,7 +5,7 @@
    `docker cp prometheus:/etc/prometheus/prometheus.yml .`<br>
    `docker cp grafana:/etc/grafana/grafana.ini .`<br>
 
-   vi docker-compose.yml:
+2. vi docker-compose.yml:
 ```
 services:
 
@@ -35,4 +35,4 @@ services:
       - 3000:3000
 ```
 
-2. Deploy Prometheus, Grafana, Pushgateway using `docker compose up -d`
+3. Deploy Prometheus, Grafana, Pushgateway using `docker compose up -d`

@@ -5,7 +5,7 @@
    `docker cp prometheus:/etc/prometheus/prometheus.yml .`<br>
    `docker cp grafana:/etc/grafana/grafana.ini .`<br>
 
-2. vi docker-compose.yml:
+2. `vi docker-compose.yml`:
 ```
 services:
 

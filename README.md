@@ -1,12 +1,12 @@
-1. Make a directory, get and copy Prometheus and Grafana settings files:
-   `mkdir monitoring && cd monitoring && touch docker-compose.yml`
-   `docker run -dit --name grafana-test grafana/grafana`
-   `docker run -dit --name prometheus-test prom/prometheus`
-   `docker cp prometheus:/etc/prometheus/prometheus.yml .`
-   `docker cp grafana:/etc/grafana/grafana.ini .`
+1. Make a directory, get and copy Prometheus and Grafana settings files:<br>
+   `mkdir monitoring && cd monitoring && touch docker-compose.yml`<br>
+   `docker run -dit --name grafana-test grafana/grafana`<br>
+   `docker run -dit --name prometheus-test prom/prometheus`<br>
+   `docker cp prometheus:/etc/prometheus/prometheus.yml .`<br>
+   `docker cp grafana:/etc/grafana/grafana.ini .`<br>
 
    vi docker-compose.yml:
-   ```
+   `
 services:
 
   prometheus:
@@ -33,6 +33,6 @@ services:
       - ./grafana.ini:/etc/grafana/grafana.ini:ro
     ports:
       - 3000:3000
-   ```
+   `
 
 2. Deploy Prometheus, Grafana, Pushgateway using `docker compose up -d`
